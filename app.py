@@ -28,7 +28,7 @@ if uploaded_file is not None:
     img = img.flatten() / 255.0
     img = img.reshape(1, -1)
 
-    model = joblib.load("best_knn_model.pkl")
+   model = joblib.load("best_knn_model_compressed.pkl")
 
     if st.button("Predict"):
 
